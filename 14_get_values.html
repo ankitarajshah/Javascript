@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" name="" id="inp">
+	<img src="tst.jpg" id="i1">
+	<a href="test.html" id="anchor_tag">LINK</a>
+	
+	<p id="getP">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<script type="text/javascript">
+
+		var  p_tag = document.getElementById('getP');
+		var  img_tag = document.getElementById('i1');
+		var a_tag = document.getElementById('anchor_tag')
+		var input_tag = document.getElementById('inp')
+
+		alert(p_tag.innerHTML);
+
+		console.log(img_tag)
+		console.log(img_tag.src)
+
+		alert(img_tag.src)
+		alert(a_tag.innerHTML)
+		alert(a_tag.href)
+		alert(a_tag.id)
+		alert(input_tag.id)
+		alert(input_tag.value)
+
+		input_tag.value = "hello "
+		
+
+	</script>
+</body>
+</html>

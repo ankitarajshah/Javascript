@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	
+</style>
+
+
+</head>
+<body>
+
+	<img src="image/i1.jpg" height="100%" width="100%" class="i1">
+	<img src="image/i2.jpg" height="100%" width="100%" class="i1">
+	<img src="image/i3.jpg" height="100%" width="100%" class="i1">
+	<img src="image/i4.jpg" height="100%" width="100%" class="i1">
+
+	<script type="text/javascript">
+		index=0;
+		function slider()
+		{
+			var image_arr = document.getElementsByClassName('i1');
+			
+			for(i=0;i<image_arr.length;i++)
+			{
+				image_arr[i].style.display ="none"
+			}
+			image_arr[index].style.display ="block";
+			index++;
+
+			if(index==4)
+			{
+				index=0;
+			}
+			setTimeout("slider()",1000);
+
+		}
+
+		slider()
+	</script>
+
+</body>
+</html>
